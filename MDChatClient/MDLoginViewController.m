@@ -48,7 +48,7 @@
     [[NSUserDefaults standardUserDefaults] setValue:username forKey:kMDChatUsernameKey];
     
     //Go to chatview
-    
+    [self performSegueWithIdentifier:@"showChat" sender:nil];
 }
 
 #pragma mark - UITableViewDelegate

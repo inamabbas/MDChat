@@ -112,11 +112,30 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="usernameTextField" destination="gsw-D1-T3f" id="CNK-om-Pw4"/>
+                        <segue destination="Yx0-I8-MyS" kind="show" identifier="showChat" id="NEv-gS-xaR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6f-YQ-R1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5" y="743"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="xgh-uY-U4n">
+            <objects>
+                <viewController id="Yx0-I8-MyS" customClass="MDChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wEb-aa-t7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="JY3-Yt-ejM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ysv-Pj-hcr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fGX-Py-9Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="462" y="743"/>
         </scene>
     </scenes>
 </document>
