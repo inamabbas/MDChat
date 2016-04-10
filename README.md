@@ -2,7 +2,7 @@
 
 It's a simple chat app. The app has a login controller where user can input their username and login to chat.
 
-After user enter his/her user name the app will connect to a web socket and present chat view. The chatview has option of connect/disconnec writing messages and logout. All the messages are presented in list view (UITableView).
+After user enter his/her user name the app will connect to a web socket and present chat view. The chatview has an option to connect/disconnec, write messages and logout. All the messages are presented in a list view (UITableView).
 
 
 **Installation Requirements**
