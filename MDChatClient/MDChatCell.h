@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class RoundedLabel;
+
 @interface MDChatCell : UITableViewCell
 
-@property (nonatomic, retain) IBOutlet UITextView *textView;
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
+@property (nonatomic, retain) IBOutlet RoundedLabel *messageLabel;
 
 
 @end

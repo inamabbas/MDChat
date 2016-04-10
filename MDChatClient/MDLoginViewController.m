@@ -8,6 +8,7 @@
 
 #import "MDLoginViewController.h"
 #import "MDConstants.h"
+#import "UIAlertController+MDAlert.h"
 
 @interface MDLoginViewController () <UITableViewDelegate>
 
@@ -32,15 +33,8 @@
 {
     NSString *username = self.usernameTextField.text;
     if (![self isValidUsername:username]) {
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                            message:NSLocalizedString(@"Please enter valid username", @"") preferredStyle:UIAlertControllerStyleAlert
-                                    ];
-        UIAlertAction *okAction = [UIAlertAction
-                                   actionWithTitle:NSLocalizedString(@"OK", @"OK action")
-                                   style:UIAlertActionStyleDefault
-                                   handler:nil];
-        [alert addAction:okAction];
-        [self presentViewController:alert animated:YES completion:nil];
+        
+        [self presentViewController:[UIAlertController alertWithMessage:NSLocalizedString(@"Please enter valid username", @"") handler:nil] animated:YES completion:nil];
         return;
     }
     
