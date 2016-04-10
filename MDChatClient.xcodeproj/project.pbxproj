@@ -10,6 +10,7 @@
 		7D541DEDA756773C2482218A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D942A155A19870FB26661A1 /* libPods.a */; };
 		9E6A1CD11CBA5C6B00784C22 /* MDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A1CD01CBA5C6B00784C22 /* MDLoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9E6A1CD41CBA5CA400784C22 /* MDChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9E6A1CDD1CBAC3DD00784C22 /* MDChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A1CDC1CBAC3DD00784C22 /* MDChatCell.m */; settings = {ASSET_TAGS = (); }; };
 		9EA25E701CB98C4100FF636A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA25E6F1CB98C4100FF636A /* main.m */; };
 		9EA25E731CB98C4100FF636A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA25E721CB98C4100FF636A /* AppDelegate.m */; };
 		9EA25E791CB98C4200FF636A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA25E771CB98C4200FF636A /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		9E6A1CD21CBA5CA400784C22 /* MDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDChatViewController.h; sourceTree = "<group>"; };
 		9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDChatViewController.m; sourceTree = "<group>"; };
 		9E6A1CD81CBAAA6100784C22 /* MDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDConstants.h; sourceTree = "<group>"; };
+		9E6A1CDB1CBAC3DD00784C22 /* MDChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDChatCell.h; sourceTree = "<group>"; };
+		9E6A1CDC1CBAC3DD00784C22 /* MDChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDChatCell.m; sourceTree = "<group>"; };
 		9EA25E6B1CB98C4100FF636A /* MDChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA25E6F1CB98C4100FF636A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EA25E711CB98C4100FF636A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */,
 				9E6A1CD81CBAAA6100784C22 /* MDConstants.h */,
 				9EA25E771CB98C4200FF636A /* Main.storyboard */,
+				9E6A1CDB1CBAC3DD00784C22 /* MDChatCell.h */,
+				9E6A1CDC1CBAC3DD00784C22 /* MDChatCell.m */,
 				9EA25E7A1CB98C4200FF636A /* Assets.xcassets */,
 				9EA25E7C1CB98C4200FF636A /* LaunchScreen.storyboard */,
 				9EA25E7F1CB98C4200FF636A /* Info.plist */,
@@ -280,6 +285,7 @@
 				9E6A1CD11CBA5C6B00784C22 /* MDLoginViewController.m in Sources */,
 				9E6A1CD41CBA5CA400784C22 /* MDChatViewController.m in Sources */,
 				9EA25E731CB98C4100FF636A /* AppDelegate.m in Sources */,
+				9E6A1CDD1CBAC3DD00784C22 /* MDChatCell.m in Sources */,
 				9EA25E701CB98C4100FF636A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

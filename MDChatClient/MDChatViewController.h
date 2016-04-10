@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDChatViewController : UIViewController
+@interface MDChatViewController : UITableViewController
 
 @end

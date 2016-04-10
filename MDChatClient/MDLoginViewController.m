@@ -9,7 +9,7 @@
 #import "MDLoginViewController.h"
 #import "MDConstants.h"
 
-@interface MDLoginViewController ()
+@interface MDLoginViewController () <UITableViewDelegate>
 
 @property (nonatomic) IBOutlet UITextField *usernameTextField;
 

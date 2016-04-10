@@ -112,7 +112,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="usernameTextField" destination="gsw-D1-T3f" id="CNK-om-Pw4"/>
-                        <segue destination="Yx0-I8-MyS" kind="show" identifier="showChat" id="NEv-gS-xaR"/>
+                        <segue destination="wXr-07-Juw" kind="show" identifier="showChat" id="ZLt-BJ-qoi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q6f-YQ-R1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,22 +120,115 @@
             <point key="canvasLocation" x="5" y="743"/>
         </scene>
         <!--Chat View Controller-->
-        <scene sceneID="xgh-uY-U4n">
+        <scene sceneID="Cc9-kI-ftl">
             <objects>
-                <viewController id="Yx0-I8-MyS" customClass="MDChatViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wEb-aa-t7U"/>
-                        <viewControllerLayoutGuide type="bottom" id="JY3-Yt-ejM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ysv-Pj-hcr">
+                <tableViewController id="wXr-07-Juw" customClass="MDChatViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bvc-mb-FS1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fGX-Py-9Mw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" id="reW-1g-Eu3">
+                            <rect key="frame" x="0.0" y="214" width="320" height="48"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="wXr-07-Juw" id="H1w-bE-nMa"/>
+                            </connections>
+                        </textView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentCell" id="TNe-tV-pdh" userLabel="SentCell" customClass="MDChatCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TNe-tV-pdh" id="EnK-6T-4zE">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q61-7L-mh6">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                        </textView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="textView" destination="q61-7L-mh6" id="QKj-In-TCV"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceivedCell" rowHeight="78" id="RqV-62-rn6" userLabel="ReceivedCell" customClass="MDChatCell">
+                                <rect key="frame" x="0.0" y="136" width="320" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RqV-62-rn6" id="rUu-5g-dD9">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-HV-17v">
+                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="KeR-5q-lEL"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Others message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMn-9j-dKi">
+                                            <rect key="frame" x="0.0" y="34" width="320" height="43"/>
+                                            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dMn-9j-dKi" secondAttribute="trailing" constant="-8" id="57E-7H-yPl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0Cc-HV-17v" secondAttribute="trailing" constant="262" id="61I-qb-sS5"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dMn-9j-dKi" secondAttribute="bottom" constant="-8" id="BAl-9H-Car"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="0Cc-HV-17v" secondAttribute="leading" id="h8o-Ra-zif"/>
+                                        <constraint firstAttribute="topMargin" secondItem="0Cc-HV-17v" secondAttribute="top" id="nRU-r8-JCq"/>
+                                        <constraint firstItem="dMn-9j-dKi" firstAttribute="top" secondItem="0Cc-HV-17v" secondAttribute="bottom" constant="5" id="vfY-dZ-abQ"/>
+                                        <constraint firstItem="dMn-9j-dKi" firstAttribute="leading" secondItem="rUu-5g-dD9" secondAttribute="leadingMargin" constant="-8" id="xvy-a7-N7Z"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="61I-qb-sS5"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="0Cc-HV-17v" id="zju-ah-r5X"/>
+                                    <outlet property="textView" destination="dMn-9j-dKi" id="hvD-Ui-pQ2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="wXr-07-Juw" id="uc1-yi-L6j"/>
+                            <outlet property="delegate" destination="wXr-07-Juw" id="L1V-zl-id9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="swT-Od-5cY">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Jm5-Pp-4g0">
+                            <connections>
+                                <action selector="logout:" destination="wXr-07-Juw" id="r37-Xl-KH3"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Connect" id="es0-4z-7pW">
+                            <connections>
+                                <action selector="connectChat:" destination="wXr-07-Juw" id="c5D-9E-CdJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="connectBtn" destination="es0-4z-7pW" id="QSt-kH-TD2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8V-Yz-YQs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="743"/>
+            <point key="canvasLocation" x="523" y="743"/>
         </scene>
     </scenes>
 </document>
