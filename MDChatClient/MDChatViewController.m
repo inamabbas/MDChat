@@ -86,7 +86,8 @@ static CGFloat const MaxToolbarHeight = 200.0f; //Toolbar contains the chat inpu
 }
 
 - (void)dealloc {
-    [self disconnect];
+    _webSocket.delegate = nil;
+    [_webSocket close];
 }
 
 - (IBAction)connectChat:(id)sender
@@ -101,7 +102,6 @@ static CGFloat const MaxToolbarHeight = 200.0f; //Toolbar contains the chat inpu
 
 - (IBAction)logout:(id)sender
 {
-    [self disconnect];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
