@@ -34,6 +34,7 @@
 		9E6A1CD01CBA5C6B00784C22 /* MDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDLoginViewController.m; sourceTree = "<group>"; };
 		9E6A1CD21CBA5CA400784C22 /* MDChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDChatViewController.h; sourceTree = "<group>"; };
 		9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDChatViewController.m; sourceTree = "<group>"; };
+		9E6A1CD81CBAAA6100784C22 /* MDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDConstants.h; sourceTree = "<group>"; };
 		9EA25E6B1CB98C4100FF636A /* MDChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA25E6F1CB98C4100FF636A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9EA25E711CB98C4100FF636A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -102,15 +103,16 @@
 			children = (
 				9EA25E711CB98C4100FF636A /* AppDelegate.h */,
 				9EA25E721CB98C4100FF636A /* AppDelegate.m */,
+				9E6A1CCF1CBA5C6B00784C22 /* MDLoginViewController.h */,
+				9E6A1CD01CBA5C6B00784C22 /* MDLoginViewController.m */,
+				9E6A1CD21CBA5CA400784C22 /* MDChatViewController.h */,
+				9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */,
+				9E6A1CD81CBAAA6100784C22 /* MDConstants.h */,
 				9EA25E771CB98C4200FF636A /* Main.storyboard */,
 				9EA25E7A1CB98C4200FF636A /* Assets.xcassets */,
 				9EA25E7C1CB98C4200FF636A /* LaunchScreen.storyboard */,
 				9EA25E7F1CB98C4200FF636A /* Info.plist */,
 				9EA25E6E1CB98C4100FF636A /* Supporting Files */,
-				9E6A1CCF1CBA5C6B00784C22 /* MDLoginViewController.h */,
-				9E6A1CD01CBA5C6B00784C22 /* MDLoginViewController.m */,
-				9E6A1CD21CBA5CA400784C22 /* MDChatViewController.h */,
-				9E6A1CD31CBA5CA400784C22 /* MDChatViewController.m */,
 			);
 			path = MDChatClient;
 			sourceTree = "<group>";

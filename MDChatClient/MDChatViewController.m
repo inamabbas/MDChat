@@ -7,6 +7,7 @@
 //
 
 #import "MDChatViewController.h"
+#import <SocketRocket/SocketRocket.h>
 
 @implementation MDChatViewController
 
