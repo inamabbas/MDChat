@@ -31,27 +31,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="luH-lZ-cBo" userLabel="Placeholder View">
-                            <rect key="frame" x="0.0" y="64" width="320" height="100"/>
+                            <rect key="frame" x="0.0" y="64" width="320" height="45"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBy-mh-pDD">
-                                    <rect key="frame" x="89" y="39" width="142" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstItem="GBy-mh-pDD" firstAttribute="centerX" secondItem="luH-lZ-cBo" secondAttribute="centerX" id="Wi9-9z-XQS"/>
-                                <constraint firstItem="GBy-mh-pDD" firstAttribute="centerY" secondItem="luH-lZ-cBo" secondAttribute="centerY" id="bne-N8-S9S"/>
-                            </constraints>
                         </view>
                         <sections>
                             <tableViewSection id="rPW-Wq-A1X">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="QSX-3k-xxc">
-                                        <rect key="frame" x="0.0" y="164" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="109" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QSX-3k-xxc" id="6Pl-W2-pMk">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -79,7 +67,7 @@
                             <tableViewSection id="dWH-n4-fgm">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="elS-ac-Afw">
-                                        <rect key="frame" x="0.0" y="228" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="173" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="elS-ac-Afw" id="UXE-Eu-LLz">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -123,75 +111,68 @@
         <scene sceneID="Cc9-kI-ftl">
             <objects>
                 <tableViewController id="wXr-07-Juw" customClass="MDChatViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bvc-mb-FS1">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Bvc-mb-FS1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" id="reW-1g-Eu3">
-                            <rect key="frame" x="0.0" y="214" width="320" height="48"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
-                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            <connections>
-                                <outlet property="delegate" destination="wXr-07-Juw" id="H1w-bE-nMa"/>
-                            </connections>
-                        </textView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SentCell" id="TNe-tV-pdh" userLabel="SentCell" customClass="MDChatCell">
                                 <rect key="frame" x="0.0" y="92" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TNe-tV-pdh" id="EnK-6T-4zE">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q61-7L-mh6">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr0-Xn-wqf" customClass="RoundedLabel">
+                                            <rect key="frame" x="39" y="0.0" width="273" height="36"/>
                                             <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                        </textView>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lr0-Xn-wqf" firstAttribute="leading" secondItem="EnK-6T-4zE" secondAttribute="leadingMargin" constant="31" id="S6c-8U-W8g"/>
+                                        <constraint firstItem="lr0-Xn-wqf" firstAttribute="top" secondItem="EnK-6T-4zE" secondAttribute="topMargin" constant="-8" id="eQv-cZ-jDl"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lr0-Xn-wqf" secondAttribute="trailing" id="yPS-Ru-fHb"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="lr0-Xn-wqf" secondAttribute="bottom" id="z7r-JY-5Mh"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="textView" destination="q61-7L-mh6" id="QKj-In-TCV"/>
+                                    <outlet property="messageLabel" destination="lr0-Xn-wqf" id="ePZ-eg-5tq"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceivedCell" rowHeight="78" id="RqV-62-rn6" userLabel="ReceivedCell" customClass="MDChatCell">
                                 <rect key="frame" x="0.0" y="136" width="320" height="78"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RqV-62-rn6" id="rUu-5g-dD9">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-HV-17v">
-                                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Cc-HV-17v">
+                                            <rect key="frame" x="8" y="8" width="38" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="KeR-5q-lEL"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Others message" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dMn-9j-dKi">
-                                            <rect key="frame" x="0.0" y="34" width="320" height="43"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-HZ-g26" customClass="RoundedLabel">
+                                            <rect key="frame" x="8" y="34" width="273" height="36"/>
                                             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                        </textView>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="dMn-9j-dKi" secondAttribute="trailing" constant="-8" id="57E-7H-yPl"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0Cc-HV-17v" secondAttribute="trailing" constant="262" id="61I-qb-sS5"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="dMn-9j-dKi" secondAttribute="bottom" constant="-8" id="BAl-9H-Car"/>
+                                        <constraint firstItem="ahF-HZ-g26" firstAttribute="top" secondItem="0Cc-HV-17v" secondAttribute="bottom" constant="5" id="HUg-io-DhL"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ahF-HZ-g26" secondAttribute="trailing" constant="31" id="OeF-X6-4qf"/>
                                         <constraint firstAttribute="leadingMargin" secondItem="0Cc-HV-17v" secondAttribute="leading" id="h8o-Ra-zif"/>
                                         <constraint firstAttribute="topMargin" secondItem="0Cc-HV-17v" secondAttribute="top" id="nRU-r8-JCq"/>
-                                        <constraint firstItem="dMn-9j-dKi" firstAttribute="top" secondItem="0Cc-HV-17v" secondAttribute="bottom" constant="5" id="vfY-dZ-abQ"/>
-                                        <constraint firstItem="dMn-9j-dKi" firstAttribute="leading" secondItem="rUu-5g-dD9" secondAttribute="leadingMargin" constant="-8" id="xvy-a7-N7Z"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="ahF-HZ-g26" secondAttribute="leading" id="vBc-bY-UKl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ahF-HZ-g26" secondAttribute="bottom" id="vnn-Uc-uKg"/>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
@@ -200,8 +181,8 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="messageLabel" destination="ahF-HZ-g26" id="kM6-bG-5f1"/>
                                     <outlet property="nameLabel" destination="0Cc-HV-17v" id="zju-ah-r5X"/>
-                                    <outlet property="textView" destination="dMn-9j-dKi" id="hvD-Ui-pQ2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
